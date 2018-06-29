@@ -31,7 +31,7 @@
 # 프로그램 실행방법
 
  1. 레파지토리 복사
-	 * `git clone https://github.com/jongmin-k/work.`
+	 * `git clone https://github.com/jongmin-k/work`
 2. 설정
 	1. application.properties 생성
 		* `./excute.sh -i`
