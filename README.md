@@ -23,7 +23,7 @@
 	* PagingAndSortingRepository를 이용해 pagination한다.
 2. Most frequently visited
 	* HOST_ID로 group by하여 HISTORY_ID의 count를 구한다.
-	* count 로 내림차순 정렬하여 상위 5개를 노출한다.
+	* count로 내림차순 정렬하여 상위 5개를 노출한다.
 3. Least Recently visited
 	* HOST_ID로 group by하여 VISIT_TIME의 max를 구한다.
 	* max값으로 오름차순 정렬하여 상위 5개를 노출한다.
@@ -46,4 +46,4 @@
 	4. Web 접속
 		*  `http://${ip}:${port}/`
 
- > **Note**  Default port ( 8080 ) 을 사용하는 경우엔 1, 2 의 과정은 무시하여도 된다. 
+ > **Note**  Default port(8080)를 사용하는경우엔 1, 2 의 과정은 무시하여도 된다. 
