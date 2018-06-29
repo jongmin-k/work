@@ -19,7 +19,7 @@
 
 ## 해결 전략
 
-1. Revent visit
+1. Revent visited
 	* PagingAndSortingRepository를 이용해 pagination한다.
 2. Most frequently visited
 	* HOST_ID로 group by하여 HISTORY_ID의 count를 구한다.
@@ -28,7 +28,15 @@
 	* HOST_ID로 group by하여 VISIT_TIME의 max를 구한다.
 	* max값으로 오름차순 정렬하여 상위 5개를 노출한다.
 
-# 프로그램 실행방법
+# 프로그램 설명
+## 환경
+* java8
+* Spring framework 5.0.7
+* Spring framework boot 2.0.3
+* H2DB 2.1.4.197 ( memory db )
+* Thymeleaf 3.0.9 ( template engine )
+
+## 실행방법
 
  1. 레파지토리 복사
 	 * `git clone https://github.com/jongmin-k/work`
