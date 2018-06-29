@@ -37,8 +37,9 @@ while getopts ":hbdis" arg; do
         ;;
     i )
         if [ ! -d $DIR_HOME/conf ]; then mkdir $DIR_HOME/conf ;fi
-        if [ -f $DIR_HOME/conf/application.properties ] ; then mv $DIR_HOME/conf/application.properties $DIR_HOME/conf/application.properties.bak ;fi
-        unzip -q -c $JAR BOOT-INF/classes/application.properties > $DIR_HOME/conf/application.properties
+		cp $DIR_HOME/src/main/resources/application.properties $DIR_HOME/conf;
+        #if [ -f $DIR_HOME/conf/application.properties ] ; then mv $DIR_HOME/conf/application.properties $DIR_HOME/conf/application.properties.bak ;fi
+        #unzip -q -c $JAR BOOT-INF/classes/application.properties > $DIR_HOME/conf/application.properties
 	if [ -f $DIR_HOME/conf/application.properties.bak ] ; then
         diff -y $DIR_HOME/conf/application.properties.bak $DIR_HOME/conf/application.properties; fi
         exit 0;
