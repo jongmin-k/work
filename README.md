@@ -35,10 +35,14 @@
 2. 설정
 	1. application.properties 생성
 		* `./excute.sh -i`
+		*  해당 command 의 결과로 ./conf/application.properties가 생성됨.
 	2. server.port 변경
 		* `./conf/application.properties 의 "server.port = 8080" 을 원하는 포트로 변경`
 	 3. 실행
 		* `./excute.sh`
+		* Daemon
+			* 실행 : `./excute.sh -d`
+			* 종료 : `./excute.sh -s` 
 	4. Web 접속
 		*  `http://${ip}:${port}/`
 
